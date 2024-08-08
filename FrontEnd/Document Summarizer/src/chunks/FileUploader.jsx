@@ -15,6 +15,7 @@ const FileUploader = () => {
       formData.append("file", file);
 
       setLoading(true); // Set loading to true when the request starts
+      // Change url according to backend
       const response = await axios.post(
         "http://127.0.0.1:5000/summarize",
         formData,
